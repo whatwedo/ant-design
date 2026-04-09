@@ -2,7 +2,7 @@ import CSSMotion from 'rc-motion';
 import { genCSSMotion } from 'rc-motion/lib/CSSMotion';
 import KeyCode from 'rc-util/lib/KeyCode';
 import React from 'react';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
 
 import Modal from '..';
 import { fireEvent, render, waitFakeTimer } from '../../../tests/utils';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
+import { createRoot } from 'react-dom/client';
 import Avatar from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
@@ -144,7 +144,7 @@ describe('Avatar Render', () => {
 
       (useBreakpoint as any).mockReturnValue({ [key]: true });
       act(() => {
-        ReactDOM.render(<Avatar size={sizes} />, wrapper);
+        createRoot(wrapper).render(<Avatar size={sizes} />);
       });
 
       expect(wrapper).toMatchSnapshot();

@@ -242,7 +242,7 @@ const TreeSelectRef = React.forwardRef(InternalTreeSelect) as <
   props: React.PropsWithChildren<TreeSelectProps<ValueType, OptionType>> & {
     ref?: React.Ref<BaseSelectRef>;
   },
-) => React.ReactElement;
+) => React.ReactElement<any>;
 
 type InternalTreeSelectType = typeof TreeSelectRef;
 

@@ -12,12 +12,12 @@ export interface EllipsisProps {
   onEllipsis: (isEllipsis: boolean) => void;
 }
 
-function cuttable(node: React.ReactElement) {
+function cuttable(node: React.ReactElement<any>) {
   const type = typeof node;
   return type === 'string' || type === 'number';
 }
 
-function getNodesLen(nodeList: React.ReactElement[]) {
+function getNodesLen(nodeList: React.ReactElement<any>[]) {
   let totalLen = 0;
 
   nodeList.forEach(node => {
@@ -31,7 +31,7 @@ function getNodesLen(nodeList: React.ReactElement[]) {
   return totalLen;
 }
 
-function sliceNodes(nodeList: React.ReactElement[], len: number) {
+function sliceNodes(nodeList: React.ReactElement<any>[], len: number) {
   let currLen = 0;
   const currentNodeList: React.ReactNode[] = [];
 

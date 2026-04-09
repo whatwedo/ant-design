@@ -22,7 +22,7 @@ export interface DirectoryTreeProps<T extends BasicDataNode = DataNode> extends 
 
 type DirectoryTreeCompoundedComponent = (<T extends BasicDataNode | DataNode = DataNode>(
   props: React.PropsWithChildren<DirectoryTreeProps<T>> & { ref?: React.Ref<RcTree> },
-) => React.ReactElement) & {
+) => React.ReactElement<any>) & {
   displayName?: string;
 };
 
@@ -48,9 +48,9 @@ const DirectoryTree: React.ForwardRefRenderFunction<RcTree, DirectoryTreeProps> 
   ref,
 ) => {
   // Shift click usage
-  const lastSelectedKey = React.useRef<Key>();
+  const lastSelectedKey = React.useRef<Key>(undefined);
 
-  const cachedSelectedKeys = React.useRef<Key[]>();
+  const cachedSelectedKeys = React.useRef<Key[]>(undefined);
 
   const getInitExpandedKeys = () => {
     const { keyEntities } = convertDataToEntities(getTreeData(props));

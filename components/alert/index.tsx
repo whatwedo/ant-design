@@ -75,9 +75,9 @@ const IconNode: React.FC<IconNodeProps> = props => {
   if (icon) {
     return replaceElement(icon, <span className={`${prefixCls}-icon`}>{icon}</span>, () => ({
       className: classNames(`${prefixCls}-icon`, {
-        [(icon as ReactElement).props.className]: (icon as ReactElement).props.className,
+        [(icon as ReactElement<any>).props.className]: (icon as ReactElement<any>).props.className,
       }),
-    })) as ReactElement;
+    })) as ReactElement<any>;
   }
   return React.createElement(iconType, { className: `${prefixCls}-icon` });
 };
@@ -123,7 +123,7 @@ const Alert: CompoundedComponent = ({
 }) => {
   const [closed, setClosed] = React.useState(false);
 
-  const ref = React.useRef<HTMLElement>();
+  const ref = React.useRef<HTMLElement>(undefined);
   const { getPrefixCls, direction } = React.useContext(ConfigContext);
   const prefixCls = getPrefixCls('alert', customizePrefixCls);
 
@@ -169,7 +169,7 @@ const Alert: CompoundedComponent = ({
       motionAppear={false}
       motionEnter={false}
       onLeaveStart={node => ({
-        maxHeight: node.offsetHeight,
+        maxHeight: node?.offsetHeight,
       })}
       onLeaveEnd={afterClose}
     >

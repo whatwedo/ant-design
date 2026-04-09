@@ -3,7 +3,7 @@ import canUseDom from 'rc-util/lib/Dom/canUseDom';
 import ConfigProvider from '..';
 import { resetWarned } from '../../_util/warning';
 
-let mockCanUseDom = true;
+var mockCanUseDom = true;
 
 jest.mock('rc-util/lib/Dom/canUseDom', () => () => mockCanUseDom);
 

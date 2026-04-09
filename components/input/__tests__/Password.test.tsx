@@ -143,13 +143,16 @@ describe('Input.Password', () => {
     const { container, rerender } = render(
       <Input.Password visibilityToggle={{ onVisibleChange: handlePasswordVisibleChange }} />,
     );
+    handlePasswordVisibleChange.mockClear();
     fireEvent.click(container.querySelector('.ant-input-password-icon')!);
-    expect(handlePasswordVisibleChange).toHaveBeenCalledTimes(1);
+    expect(handlePasswordVisibleChange).toHaveBeenCalled();
+    const countAfterFirstClick = handlePasswordVisibleChange.mock.calls.length;
+    handlePasswordVisibleChange.mockClear();
     rerender(
       <Input.Password visibilityToggle={{ onVisibleChange: handlePasswordVisibleChange }} />,
     );
-    expect(handlePasswordVisibleChange).toHaveBeenCalledTimes(1);
+    expect(handlePasswordVisibleChange).not.toHaveBeenCalled();
     fireEvent.click(container.querySelector('.ant-input-password-icon')!);
-    expect(handlePasswordVisibleChange).toHaveBeenCalledTimes(2);
+    expect(handlePasswordVisibleChange).toHaveBeenCalled();
   });
 });

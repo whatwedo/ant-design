@@ -46,13 +46,13 @@ function renderIndicator(prefixCls: string, props: SpinClassProps): React.ReactN
 
   if (isValidElement(indicator)) {
     return cloneElement(indicator, {
-      className: classNames(indicator.props.className, dotClassName),
+      className: classNames((indicator as React.ReactElement<any>).props.className, dotClassName),
     });
   }
 
   if (isValidElement(defaultIndicator)) {
     return cloneElement(defaultIndicator, {
-      className: classNames(defaultIndicator.props.className, dotClassName),
+      className: classNames((defaultIndicator as React.ReactElement<any>).props.className, dotClassName),
     });
   }
 

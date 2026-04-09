@@ -24,6 +24,6 @@ export function replaceElement(
   );
 }
 
-export function cloneElement(element: React.ReactNode, props?: RenderProps): React.ReactElement {
-  return replaceElement(element, element, props) as React.ReactElement;
+export function cloneElement(element: React.ReactNode, props?: RenderProps): React.ReactElement<any> {
+  return replaceElement(element, element, props) as React.ReactElement<any>;
 }

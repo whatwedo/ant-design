@@ -727,43 +727,50 @@ exports[`renders ./components/empty/demo/config-provider.md correctly 1`] = `
 `;
 
 exports[`renders ./components/empty/demo/customize.md correctly 1`] = `
-<div
-  class="ant-empty"
->
+Array [
+  <link
+    as="image"
+    href="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
+    rel="preload"
+  />,
   <div
-    class="ant-empty-image"
-    style="height:60px"
+    class="ant-empty"
   >
-    <img
-      alt="empty"
-      src="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
-    />
-  </div>
-  <div
-    class="ant-empty-description"
-  >
-    <span>
-      Customize
-      <a
-        href="#API"
-      >
-        Description
-      </a>
-    </span>
-  </div>
-  <div
-    class="ant-empty-footer"
-  >
-    <button
-      class="ant-btn ant-btn-primary"
-      type="button"
+    <div
+      class="ant-empty-image"
+      style="height:60px"
+    >
+      <img
+        alt="empty"
+        src="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
+      />
+    </div>
+    <div
+      class="ant-empty-description"
     >
       <span>
-        Create Now
+        Customize
+        <a
+          href="#API"
+        >
+          Description
+        </a>
       </span>
-    </button>
-  </div>
-</div>
+    </div>
+    <div
+      class="ant-empty-footer"
+    >
+      <button
+        class="ant-btn ant-btn-primary"
+        type="button"
+      >
+        <span>
+          Create Now
+        </span>
+      </button>
+    </div>
+  </div>,
+]
 `;
 
 exports[`renders ./components/empty/demo/description.md correctly 1`] = `

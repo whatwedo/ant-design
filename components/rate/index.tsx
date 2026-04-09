@@ -15,7 +15,7 @@ interface RateNodeProps {
 
 const Rate = React.forwardRef<unknown, RateProps>((props, ref) => {
   const { prefixCls, tooltips, character = <StarFilled />, ...rest } = props;
-  const characterRender = (node: React.ReactElement, { index }: RateNodeProps) => {
+  const characterRender = (node: React.ReactElement<any>, { index }: RateNodeProps) => {
     if (!tooltips) {
       return node;
     }

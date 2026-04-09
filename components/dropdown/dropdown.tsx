@@ -29,7 +29,7 @@ const Placements = tuple(
 
 type Placement = typeof Placements[number];
 
-type OverlayFunc = () => React.ReactElement;
+type OverlayFunc = () => React.ReactElement<any>;
 
 type Align = {
   points?: [string, string];
@@ -75,7 +75,7 @@ export interface DropdownProps {
 
   // Deprecated
   /** @deprecated Please use `menu` instead */
-  overlay?: React.ReactElement | OverlayFunc;
+  overlay?: React.ReactElement<any> | OverlayFunc;
   /** @deprecated Please use `open` instead */
   visible?: boolean;
   /** @deprecated Please use `onOpenChange` instead */

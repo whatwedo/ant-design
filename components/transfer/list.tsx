@@ -245,7 +245,7 @@ export default class TransferList<
     onItemSelectAll: (dataSource: string[], checkAll: boolean) => void;
     disabled?: boolean;
     prefixCls?: string;
-  }): false | JSX.Element {
+  }): false | React.JSX.Element {
     const checkStatus = this.getCheckStatus(filteredItems);
     const checkedAll = checkStatus === 'all';
     const checkAllCheckbox = (

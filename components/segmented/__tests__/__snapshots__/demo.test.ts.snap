@@ -300,6 +300,11 @@ Array [
 
 exports[`renders ./components/segmented/demo/custom.md correctly 1`] = `
 Array [
+  <link
+    as="image"
+    href="https://joesch.moe/api/v1/random"
+    rel="preload"
+  />,
   <div
     class="ant-segmented"
   >

@@ -22732,7 +22732,6 @@ exports[`ConfigProvider components Radio prefixCls 1`] = `
 exports[`ConfigProvider components Rate configProvider 1`] = `
 <ul
   class="config-rate"
-  role="radiogroup"
   tabindex="0"
 >
   <li
@@ -23031,7 +23030,6 @@ exports[`ConfigProvider components Rate configProvider 1`] = `
 exports[`ConfigProvider components Rate configProvider componentDisabled 1`] = `
 <ul
   class="config-rate"
-  role="radiogroup"
   tabindex="0"
 >
   <li
@@ -23330,7 +23328,6 @@ exports[`ConfigProvider components Rate configProvider componentDisabled 1`] = `
 exports[`ConfigProvider components Rate configProvider componentSize large 1`] = `
 <ul
   class="config-rate"
-  role="radiogroup"
   tabindex="0"
 >
   <li
@@ -23629,7 +23626,6 @@ exports[`ConfigProvider components Rate configProvider componentSize large 1`] =
 exports[`ConfigProvider components Rate configProvider componentSize middle 1`] = `
 <ul
   class="config-rate"
-  role="radiogroup"
   tabindex="0"
 >
   <li
@@ -23928,7 +23924,6 @@ exports[`ConfigProvider components Rate configProvider componentSize middle 1`] 
 exports[`ConfigProvider components Rate configProvider virtual and dropdownMatchSelectWidth 1`] = `
 <ul
   class="ant-rate"
-  role="radiogroup"
   tabindex="0"
 >
   <li
@@ -24227,7 +24222,6 @@ exports[`ConfigProvider components Rate configProvider virtual and dropdownMatch
 exports[`ConfigProvider components Rate normal 1`] = `
 <ul
   class="ant-rate"
-  role="radiogroup"
   tabindex="0"
 >
   <li
@@ -24526,7 +24520,6 @@ exports[`ConfigProvider components Rate normal 1`] = `
 exports[`ConfigProvider components Rate prefixCls 1`] = `
 <ul
   class="prefix-Rate"
-  role="radiogroup"
   tabindex="0"
 >
   <li
@@ -25870,6 +25863,7 @@ exports[`ConfigProvider components Slider configProvider 1`] = `
   />
   <div
     aria-disabled="false"
+    aria-orientation="horizontal"
     aria-valuemax="100"
     aria-valuemin="0"
     aria-valuenow="0"
@@ -25921,6 +25915,7 @@ exports[`ConfigProvider components Slider configProvider componentDisabled 1`] =
   />
   <div
     aria-disabled="false"
+    aria-orientation="horizontal"
     aria-valuemax="100"
     aria-valuemin="0"
     aria-valuenow="0"
@@ -25972,6 +25967,7 @@ exports[`ConfigProvider components Slider configProvider componentSize large 1`]
   />
   <div
     aria-disabled="false"
+    aria-orientation="horizontal"
     aria-valuemax="100"
     aria-valuemin="0"
     aria-valuenow="0"
@@ -26023,6 +26019,7 @@ exports[`ConfigProvider components Slider configProvider componentSize middle 1`
   />
   <div
     aria-disabled="false"
+    aria-orientation="horizontal"
     aria-valuemax="100"
     aria-valuemin="0"
     aria-valuenow="0"
@@ -26074,6 +26071,7 @@ exports[`ConfigProvider components Slider configProvider virtual and dropdownMat
   />
   <div
     aria-disabled="false"
+    aria-orientation="horizontal"
     aria-valuemax="100"
     aria-valuemin="0"
     aria-valuenow="0"
@@ -26125,6 +26123,7 @@ exports[`ConfigProvider components Slider normal 1`] = `
   />
   <div
     aria-disabled="false"
+    aria-orientation="horizontal"
     aria-valuemax="100"
     aria-valuemin="0"
     aria-valuenow="0"
@@ -26176,6 +26175,7 @@ exports[`ConfigProvider components Slider prefixCls 1`] = `
   />
   <div
     aria-disabled="false"
+    aria-orientation="horizontal"
     aria-valuemax="100"
     aria-valuemin="0"
     aria-valuenow="0"
@@ -40607,7 +40607,6 @@ exports[`ConfigProvider components Tree configProvider 1`] = `
 <div>
   <div
     class="config-tree config-tree-icon-hide"
-    role="tree"
   >
     <div>
       <input
@@ -40632,6 +40631,7 @@ exports[`ConfigProvider components Tree configProvider 1`] = `
     </div>
     <div
       class="config-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -40643,9 +40643,10 @@ exports[`ConfigProvider components Tree configProvider 1`] = `
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last config-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -40672,7 +40673,6 @@ exports[`ConfigProvider components Tree configProvider 1`] = `
   </div>
   <div
     class="config-tree config-tree-block-node config-tree-directory"
-    role="tree"
   >
     <div>
       <input
@@ -40697,6 +40697,7 @@ exports[`ConfigProvider components Tree configProvider 1`] = `
     </div>
     <div
       class="config-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -40708,9 +40709,10 @@ exports[`ConfigProvider components Tree configProvider 1`] = `
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last config-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -40765,7 +40767,6 @@ exports[`ConfigProvider components Tree configProvider componentDisabled 1`] = `
 <div>
   <div
     class="config-tree config-tree-icon-hide"
-    role="tree"
   >
     <div>
       <input
@@ -40790,6 +40791,7 @@ exports[`ConfigProvider components Tree configProvider componentDisabled 1`] = `
     </div>
     <div
       class="config-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -40801,9 +40803,10 @@ exports[`ConfigProvider components Tree configProvider componentDisabled 1`] = `
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last config-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -40830,7 +40833,6 @@ exports[`ConfigProvider components Tree configProvider componentDisabled 1`] = `
   </div>
   <div
     class="config-tree config-tree-block-node config-tree-directory"
-    role="tree"
   >
     <div>
       <input
@@ -40855,6 +40857,7 @@ exports[`ConfigProvider components Tree configProvider componentDisabled 1`] = `
     </div>
     <div
       class="config-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -40866,9 +40869,10 @@ exports[`ConfigProvider components Tree configProvider componentDisabled 1`] = `
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last config-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -40923,7 +40927,6 @@ exports[`ConfigProvider components Tree configProvider componentSize large 1`] =
 <div>
   <div
     class="config-tree config-tree-icon-hide"
-    role="tree"
   >
     <div>
       <input
@@ -40948,6 +40951,7 @@ exports[`ConfigProvider components Tree configProvider componentSize large 1`] =
     </div>
     <div
       class="config-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -40959,9 +40963,10 @@ exports[`ConfigProvider components Tree configProvider componentSize large 1`] =
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last config-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -40988,7 +40993,6 @@ exports[`ConfigProvider components Tree configProvider componentSize large 1`] =
   </div>
   <div
     class="config-tree config-tree-block-node config-tree-directory"
-    role="tree"
   >
     <div>
       <input
@@ -41013,6 +41017,7 @@ exports[`ConfigProvider components Tree configProvider componentSize large 1`] =
     </div>
     <div
       class="config-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -41024,9 +41029,10 @@ exports[`ConfigProvider components Tree configProvider componentSize large 1`] =
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last config-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -41081,7 +41087,6 @@ exports[`ConfigProvider components Tree configProvider componentSize middle 1`] 
 <div>
   <div
     class="config-tree config-tree-icon-hide"
-    role="tree"
   >
     <div>
       <input
@@ -41106,6 +41111,7 @@ exports[`ConfigProvider components Tree configProvider componentSize middle 1`] 
     </div>
     <div
       class="config-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -41117,9 +41123,10 @@ exports[`ConfigProvider components Tree configProvider componentSize middle 1`] 
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last config-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -41146,7 +41153,6 @@ exports[`ConfigProvider components Tree configProvider componentSize middle 1`] 
   </div>
   <div
     class="config-tree config-tree-block-node config-tree-directory"
-    role="tree"
   >
     <div>
       <input
@@ -41171,6 +41177,7 @@ exports[`ConfigProvider components Tree configProvider componentSize middle 1`] 
     </div>
     <div
       class="config-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -41182,9 +41189,10 @@ exports[`ConfigProvider components Tree configProvider componentSize middle 1`] 
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="config-tree-treenode config-tree-treenode-switcher-close config-tree-treenode-leaf-last config-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -41239,7 +41247,6 @@ exports[`ConfigProvider components Tree configProvider virtual and dropdownMatch
 <div>
   <div
     class="ant-tree ant-tree-icon-hide"
-    role="tree"
   >
     <div>
       <input
@@ -41264,6 +41271,7 @@ exports[`ConfigProvider components Tree configProvider virtual and dropdownMatch
     </div>
     <div
       class="ant-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -41275,9 +41283,10 @@ exports[`ConfigProvider components Tree configProvider virtual and dropdownMatch
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="ant-tree-treenode ant-tree-treenode-switcher-close ant-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="ant-tree-treenode ant-tree-treenode-switcher-close ant-tree-treenode-leaf-last ant-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -41304,7 +41313,6 @@ exports[`ConfigProvider components Tree configProvider virtual and dropdownMatch
   </div>
   <div
     class="ant-tree ant-tree-block-node ant-tree-directory"
-    role="tree"
   >
     <div>
       <input
@@ -41329,6 +41337,7 @@ exports[`ConfigProvider components Tree configProvider virtual and dropdownMatch
     </div>
     <div
       class="ant-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -41340,9 +41349,10 @@ exports[`ConfigProvider components Tree configProvider virtual and dropdownMatch
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="ant-tree-treenode ant-tree-treenode-switcher-close ant-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="ant-tree-treenode ant-tree-treenode-switcher-close ant-tree-treenode-leaf-last ant-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -41397,7 +41407,6 @@ exports[`ConfigProvider components Tree normal 1`] = `
 <div>
   <div
     class="ant-tree ant-tree-icon-hide"
-    role="tree"
   >
     <div>
       <input
@@ -41422,6 +41431,7 @@ exports[`ConfigProvider components Tree normal 1`] = `
     </div>
     <div
       class="ant-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -41433,9 +41443,10 @@ exports[`ConfigProvider components Tree normal 1`] = `
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="ant-tree-treenode ant-tree-treenode-switcher-close ant-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="ant-tree-treenode ant-tree-treenode-switcher-close ant-tree-treenode-leaf-last ant-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -41462,7 +41473,6 @@ exports[`ConfigProvider components Tree normal 1`] = `
   </div>
   <div
     class="ant-tree ant-tree-block-node ant-tree-directory"
-    role="tree"
   >
     <div>
       <input
@@ -41487,6 +41497,7 @@ exports[`ConfigProvider components Tree normal 1`] = `
     </div>
     <div
       class="ant-tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -41498,9 +41509,10 @@ exports[`ConfigProvider components Tree normal 1`] = `
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="ant-tree-treenode ant-tree-treenode-switcher-close ant-tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="ant-tree-treenode ant-tree-treenode-switcher-close ant-tree-treenode-leaf-last ant-tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -41555,7 +41567,6 @@ exports[`ConfigProvider components Tree prefixCls 1`] = `
 <div>
   <div
     class="prefix-Tree prefix-Tree-icon-hide"
-    role="tree"
   >
     <div>
       <input
@@ -41580,6 +41591,7 @@ exports[`ConfigProvider components Tree prefixCls 1`] = `
     </div>
     <div
       class="prefix-Tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -41591,9 +41603,10 @@ exports[`ConfigProvider components Tree prefixCls 1`] = `
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="prefix-Tree-treenode prefix-Tree-treenode-switcher-close prefix-Tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="prefix-Tree-treenode prefix-Tree-treenode-switcher-close prefix-Tree-treenode-leaf-last prefix-Tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -41620,7 +41633,6 @@ exports[`ConfigProvider components Tree prefixCls 1`] = `
   </div>
   <div
     class="prefix-Tree prefix-Tree-block-node prefix-Tree-directory"
-    role="tree"
   >
     <div>
       <input
@@ -41645,6 +41657,7 @@ exports[`ConfigProvider components Tree prefixCls 1`] = `
     </div>
     <div
       class="prefix-Tree-list"
+      role="tree"
       style="position: relative;"
     >
       <div
@@ -41656,9 +41669,10 @@ exports[`ConfigProvider components Tree prefixCls 1`] = `
             style="display: flex; flex-direction: column;"
           >
             <div
-              aria-grabbed="false"
-              class="prefix-Tree-treenode prefix-Tree-treenode-switcher-close prefix-Tree-treenode-leaf-last"
+              aria-expanded="false"
+              class="prefix-Tree-treenode prefix-Tree-treenode-switcher-close prefix-Tree-treenode-leaf-last prefix-Tree-treenode-leaf"
               draggable="false"
+              role="treeitem"
             >
               <span
                 aria-hidden="true"
@@ -42604,6 +42618,7 @@ exports[`ConfigProvider components Upload configProvider 1`] = `
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -42704,6 +42719,7 @@ exports[`ConfigProvider components Upload configProvider componentDisabled 1`] =
       <input
         accept=""
         disabled=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -42777,6 +42793,7 @@ exports[`ConfigProvider components Upload configProvider componentSize large 1`]
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -42877,6 +42894,7 @@ exports[`ConfigProvider components Upload configProvider componentSize middle 1`
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -42977,6 +42995,7 @@ exports[`ConfigProvider components Upload configProvider virtual and dropdownMat
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -43077,6 +43096,7 @@ exports[`ConfigProvider components Upload normal 1`] = `
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -43177,6 +43197,7 @@ exports[`ConfigProvider components Upload prefixCls 1`] = `
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />

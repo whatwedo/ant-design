@@ -1,7 +1,7 @@
 import { SearchOutlined } from '@ant-design/icons';
 import { resetWarned } from 'rc-util/lib/warning';
 import React, { Component } from 'react';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
 import Button from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';

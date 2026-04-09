@@ -27,7 +27,7 @@ const ElementsHolder = React.memo(
   }),
 );
 
-export default function useModal(): [Omit<ModalStaticFunctions, 'warn'>, React.ReactElement] {
+export default function useModal(): [Omit<ModalStaticFunctions, 'warn'>, React.ReactElement<any>] {
   const holderRef = React.useRef<ElementsHolderRef>(null);
 
   // ========================== Effect ==========================

@@ -12,7 +12,7 @@ export default function useItemRef() {
   }>({});
 
   function getRef(name: InternalNamePath, children: any) {
-    const childrenRef: React.Ref<React.ReactElement> =
+    const childrenRef: React.Ref<React.ReactElement<any>> =
       children && typeof children === 'object' && children.ref;
     const nameStr = name.join('_');
     if (cacheRef.current.name !== nameStr || cacheRef.current.originRef !== childrenRef) {

@@ -126,7 +126,7 @@ const Popconfirm = React.forwardRef<unknown, PopconfirmProps>((props, ref) => {
       {cloneElement(children, {
         onKeyDown: (e: React.KeyboardEvent<any>) => {
           if (React.isValidElement(children)) {
-            children?.props.onKeyDown?.(e);
+            (children as React.ReactElement<any>)?.props.onKeyDown?.(e);
           }
           onKeyDown(e);
         },

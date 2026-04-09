@@ -65,10 +65,10 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
     children,
     dataSource,
   } = props;
-  const childNodes: React.ReactElement[] = toArray(children);
+  const childNodes: React.ReactElement<any>[] = toArray(children);
 
   // ============================= Input =============================
-  let customizeInput: React.ReactElement | undefined;
+  let customizeInput: React.ReactElement<any> | undefined;
 
   if (
     childNodes.length === 1 &&
@@ -78,7 +78,7 @@ const AutoComplete: React.ForwardRefRenderFunction<RefSelectProps, AutoCompleteP
     [customizeInput] = childNodes;
   }
 
-  const getInputElement = customizeInput ? (): React.ReactElement => customizeInput! : undefined;
+  const getInputElement = customizeInput ? (): React.ReactElement<any> => customizeInput! : undefined;
 
   // ============================ Options ============================
   let optionChildren: React.ReactNode;
@@ -172,7 +172,7 @@ const RefAutoComplete = React.forwardRef<RefSelectProps, AutoCompleteProps>(
   props: React.PropsWithChildren<AutoCompleteProps<ValueType, OptionType>> & {
     ref?: React.Ref<BaseSelectRef>;
   },
-) => React.ReactElement) & {
+) => React.ReactElement<any>) & {
   Option: typeof Option;
 };
 

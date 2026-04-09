@@ -17,7 +17,7 @@ interface SharedProps<DateType> {
   generateConfig: GenerateConfig<DateType>;
   locale: Locale;
   fullscreen: boolean;
-  divRef: React.RefObject<HTMLDivElement>;
+  divRef: React.RefObject<HTMLDivElement | null>;
   onChange: (year: DateType) => void;
 }
 

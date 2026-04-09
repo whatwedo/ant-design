@@ -2,7 +2,11 @@
 
 exports[`Segmented render empty segmented 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -12,7 +16,11 @@ exports[`Segmented render empty segmented 1`] = `
 
 exports[`Segmented render label with ReactNode 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -70,7 +78,11 @@ exports[`Segmented render label with ReactNode 1`] = `
 
 exports[`Segmented render segmented ok 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -124,7 +136,11 @@ exports[`Segmented render segmented ok 1`] = `
 
 exports[`Segmented render segmented with \`block\` 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented ant-segmented-block"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -178,7 +194,11 @@ exports[`Segmented render segmented with \`block\` 1`] = `
 
 exports[`Segmented render segmented with \`size#large\` 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented ant-segmented-lg"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -232,7 +252,11 @@ exports[`Segmented render segmented with \`size#large\` 1`] = `
 
 exports[`Segmented render segmented with \`size#small\` 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented ant-segmented-sm"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -286,7 +310,11 @@ exports[`Segmented render segmented with \`size#small\` 1`] = `
 
 exports[`Segmented render segmented with mixed options 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -340,7 +368,11 @@ exports[`Segmented render segmented with mixed options 1`] = `
 
 exports[`Segmented render segmented with numeric options 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -422,7 +454,10 @@ exports[`Segmented render segmented with numeric options 1`] = `
 
 exports[`Segmented render segmented with options null/undefined 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented ant-segmented-disabled"
+  role="radiogroup"
 >
   <div
     class="ant-segmented-group"
@@ -471,7 +506,11 @@ exports[`Segmented render segmented with options null/undefined 1`] = `
 
 exports[`Segmented render segmented with options: disabled 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -526,7 +565,11 @@ exports[`Segmented render segmented with options: disabled 1`] = `
 
 exports[`Segmented render segmented with string options 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -580,7 +623,11 @@ exports[`Segmented render segmented with string options 1`] = `
 
 exports[`Segmented render segmented with thumb 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -634,7 +681,10 @@ exports[`Segmented render segmented with thumb 1`] = `
 
 exports[`Segmented render segmented: disabled 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented ant-segmented-disabled"
+  role="radiogroup"
 >
   <div
     class="ant-segmented-group"
@@ -691,7 +741,11 @@ exports[`Segmented render segmented: disabled 1`] = `
 
 exports[`Segmented render with icons 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"
@@ -776,7 +830,11 @@ exports[`Segmented render with icons 1`] = `
 
 exports[`Segmented rtl render component should be rendered correctly in RTL direction 1`] = `
 <div
+  aria-label="segmented control"
+  aria-orientation="horizontal"
   class="ant-segmented ant-segmented-rtl"
+  role="radiogroup"
+  tabindex="0"
 >
   <div
     class="ant-segmented-group"

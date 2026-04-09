@@ -42,7 +42,7 @@ const Editable: React.FC<EditableProps> = ({
   const ref = React.useRef<TextAreaRef>(null);
 
   const inComposition = React.useRef(false);
-  const lastKeyCode = React.useRef<number>();
+  const lastKeyCode = React.useRef<number>(undefined);
 
   const [current, setCurrent] = React.useState(value);
 

@@ -75,7 +75,7 @@ export default function SingleNumber(props: SingleNumberProps) {
 
   // ============================= Render =============================
   // Render unit list
-  let unitNodes: React.ReactElement[];
+  let unitNodes: React.ReactElement<any>[];
   let offsetStyle: React.CSSProperties | undefined;
 
   if (prevValue === value || Number.isNaN(value) || Number.isNaN(prevValue)) {

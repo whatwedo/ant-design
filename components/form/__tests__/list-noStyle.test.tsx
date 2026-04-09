@@ -1,5 +1,5 @@
 import React from 'react';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
 import Form from '..';
 import { render, fireEvent, waitFakeTimer } from '../../../tests/utils';
 import Input from '../../input';

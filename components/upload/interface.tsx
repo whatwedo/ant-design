@@ -70,7 +70,7 @@ export type UploadListType = 'text' | 'picture' | 'picture-card';
 export type UploadListProgressProps = Omit<ProgressProps, 'percent' | 'type'>;
 
 export type ItemRender<T = any> = (
-  originNode: React.ReactElement,
+  originNode: React.ReactElement<any>,
   file: UploadFile,
   fileList: Array<UploadFile<T>>,
   actions: {

@@ -1,12 +1,12 @@
 import * as React from 'react';
 
 export default function usePatchElement(): [
-  React.ReactElement[],
-  (element: React.ReactElement) => Function,
+  React.ReactElement<any>[],
+  (element: React.ReactElement<any>) => Function,
 ] {
-  const [elements, setElements] = React.useState<React.ReactElement[]>([]);
+  const [elements, setElements] = React.useState<React.ReactElement<any>[]>([]);
 
-  const patchElement = React.useCallback((element: React.ReactElement) => {
+  const patchElement = React.useCallback((element: React.ReactElement<any>) => {
     // append a new element to elements (and create a new ref)
     setElements(originElements => [...originElements, element]);
 

@@ -44,10 +44,10 @@ function getColumn(column: DescriptionsProps['column'], screens: ScreenMap): num
 }
 
 function getFilledItem(
-  node: React.ReactElement,
+  node: React.ReactElement<any>,
   span: number | undefined,
   rowRestCol: number,
-): React.ReactElement {
+): React.ReactElement<any> {
   let clone = node;
 
   if (span === undefined || span > rowRestCol) {
@@ -66,13 +66,13 @@ function getFilledItem(
 
 function getRows(children: React.ReactNode, column: number) {
   const childNodes = toArray(children).filter(n => n);
-  const rows: React.ReactElement[][] = [];
+  const rows: React.ReactElement<any>[][] = [];
 
-  let tmpRow: React.ReactElement[] = [];
+  let tmpRow: React.ReactElement<any>[] = [];
   let rowRestCol = column;
 
   childNodes.forEach((node, index) => {
-    const span: number | undefined = node.props?.span;
+    const span: number | undefined = (node as React.ReactElement<any>).props?.span;
     const mergedSpan = span || 1;
 
     // Additional handle last one

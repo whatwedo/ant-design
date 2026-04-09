@@ -1,5 +1,5 @@
 import React from 'react';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
 import type { DrawerProps } from '..';
 import Drawer from '..';
 import mountTest from '../../../tests/shared/mountTest';

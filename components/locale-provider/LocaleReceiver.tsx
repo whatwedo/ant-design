@@ -13,7 +13,7 @@ export interface LocaleReceiverProps<C extends LocaleComponentName = LocaleCompo
     locale: NonNullable<Locale[C]>,
     localeCode: string,
     fullLocale: Locale,
-  ) => React.ReactElement;
+  ) => React.ReactElement<any>;
 }
 
 const LocaleReceiver = <C extends LocaleComponentName = LocaleComponentName>(

@@ -1,6 +1,4 @@
 import React from 'react';
-import { Simulate } from 'react-dom/test-utils';
-
 import Tag from '..';
 import { resetWarned } from '../../_util/warning';
 
@@ -53,16 +51,11 @@ describe('Tag', () => {
     const onClick = jest.fn();
     const { container } = render(<Tag onClick={onClick} />);
     const target = container.querySelectorAll('.ant-tag')[0];
-    Simulate.click(target);
+    fireEvent.click(target);
     expect(onClick).toHaveBeenCalledWith(
       expect.objectContaining({
         type: 'click',
         target,
-        preventDefault: expect.any(Function),
-        nativeEvent: {
-          type: 'click',
-          target,
-        },
       }),
     );
   });
@@ -71,16 +64,11 @@ describe('Tag', () => {
     const onClick = jest.fn();
     const { container } = render(<Tag.CheckableTag checked={false} onClick={onClick} />);
     const target = container.querySelectorAll('.ant-tag')[0];
-    Simulate.click(target);
+    fireEvent.click(target);
     expect(onClick).toHaveBeenCalledWith(
       expect.objectContaining({
         type: 'click',
         target,
-        preventDefault: expect.any(Function),
-        nativeEvent: {
-          type: 'click',
-          target,
-        },
       }),
     );
   });

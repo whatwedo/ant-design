@@ -36,7 +36,7 @@ export default function renderSwitcherIcon(
 
       if (isValidElement(leafIcon)) {
         return cloneElement(leafIcon, {
-          className: classNames(leafIcon.props.className || '', leafCls),
+          className: classNames((leafIcon as React.ReactElement<any>).props.className || '', leafCls),
         });
       }
 
@@ -56,7 +56,7 @@ export default function renderSwitcherIcon(
 
   if (isValidElement(switcher)) {
     return cloneElement(switcher, {
-      className: classNames(switcher.props.className || '', switcherCls),
+      className: classNames((switcher as React.ReactElement<any>).props.className || '', switcherCls),
     });
   }
 

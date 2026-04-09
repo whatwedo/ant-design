@@ -24,7 +24,7 @@ export {
 
 type CompoundedComponent = (<T extends BasicDataNode | DataNode = DataNode>(
   props: React.PropsWithChildren<TreeProps<T>> & { ref?: React.Ref<RcTree> },
-) => React.ReactElement) & {
+) => React.ReactElement<any>) & {
   TreeNode: typeof TreeNode;
   DirectoryTree: typeof DirectoryTree;
 };

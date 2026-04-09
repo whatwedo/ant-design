@@ -13,7 +13,7 @@ import type { RequiredMark } from './Form';
 import type { FormLabelAlign } from './interface';
 
 export type WrapperTooltipProps = TooltipProps & {
-  icon?: React.ReactElement;
+  icon?: React.ReactElement<any>;
 };
 
 export type LabelTooltipType = WrapperTooltipProps | React.ReactNode;

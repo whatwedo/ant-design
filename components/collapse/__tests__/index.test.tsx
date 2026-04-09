@@ -1,5 +1,5 @@
 import React from 'react';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
 import { waitFakeTimer, render, fireEvent } from '../../../tests/utils';
 import { resetWarned } from '../../_util/warning';
 
