@@ -26,7 +26,7 @@ function isUnBorderedButtonType(type: ButtonType | undefined) {
 }
 
 // Insert one space between two chinese characters automatically.
-function insertSpace(child: React.ReactElement | string | number, needInserted: boolean) {
+function insertSpace(child: React.ReactElement<any> | string | number, needInserted: boolean) {
   // Check the child if is undefined or null.
   if (child === null || child === undefined) {
     return;
@@ -71,7 +71,7 @@ function spaceChildren(children: React.ReactNode, needInserted: boolean) {
 
   // Pass to React.Children.map to auto fill key
   return React.Children.map(childList, child =>
-    insertSpace(child as React.ReactElement | string | number, needInserted),
+    insertSpace(child as React.ReactElement<any> | string | number, needInserted),
   );
 }
 

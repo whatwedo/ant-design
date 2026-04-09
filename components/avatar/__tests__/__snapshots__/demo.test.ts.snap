@@ -316,6 +316,11 @@ Array [
 
 exports[`renders ./components/avatar/demo/fallback.md correctly 1`] = `
 Array [
+  <link
+    as="image"
+    href="http://abc.com/not-exist.jpg"
+    rel="preload"
+  />,
   <span
     class="ant-avatar ant-avatar-circle ant-avatar-image"
   >
@@ -335,6 +340,16 @@ Array [
 
 exports[`renders ./components/avatar/demo/group.md correctly 1`] = `
 Array [
+  <link
+    as="image"
+    href="https://joesch.moe/api/v1/random"
+    rel="preload"
+  />,
+  <link
+    as="image"
+    href="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+    rel="preload"
+  />,
   <div
     class="ant-avatar-group"
   >
@@ -547,6 +562,11 @@ exports[`renders ./components/avatar/demo/responsive.md correctly 1`] = `
 
 exports[`renders ./components/avatar/demo/toggle-debug.md correctly 1`] = `
 Array [
+  <link
+    as="image"
+    href="invalid"
+    rel="preload"
+  />,
   <button
     class="ant-btn ant-btn-default"
     type="button"
@@ -624,6 +644,11 @@ Array [
 
 exports[`renders ./components/avatar/demo/type.md correctly 1`] = `
 Array [
+  <link
+    as="image"
+    href="https://joesch.moe/api/v1/random"
+    rel="preload"
+  />,
   <span
     class="ant-avatar ant-avatar-circle ant-avatar-icon"
   >

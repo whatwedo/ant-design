@@ -1,5 +1,5 @@
 import React from 'react';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
 import type { ValidateMessages } from 'rc-field-form/es/interface';
 import ConfigProvider from '..';
 import { render, waitFakeTimer, fireEvent } from '../../../tests/utils';

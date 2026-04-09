@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
 import { UserOutlined } from '@ant-design/icons';
 import Layout from '..';
 import mountTest from '../../../tests/shared/mountTest';

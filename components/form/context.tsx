@@ -20,7 +20,7 @@ export interface FormContextProps {
   labelCol?: ColProps;
   wrapperCol?: ColProps;
   requiredMark?: RequiredMark;
-  itemRef: (name: (string | number)[]) => (node: React.ReactElement) => void;
+  itemRef: (name: (string | number)[]) => (node: React.ReactElement<any>) => void;
   form?: FormInstance;
 }
 

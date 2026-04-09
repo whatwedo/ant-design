@@ -75,7 +75,7 @@ export default class MenuItem extends React.Component<MenuItemProps> {
       >
         {cloneElement(icon, {
           className: classNames(
-            isValidElement(icon) ? icon.props?.className : '',
+            isValidElement(icon) ? (icon as React.ReactElement<any>).props?.className : '',
             `${prefixCls}-item-icon`,
           ),
         })}

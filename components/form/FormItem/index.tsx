@@ -41,7 +41,7 @@ interface MemoInputProps {
 }
 
 const MemoInput = React.memo(
-  ({ children }: MemoInputProps) => children as JSX.Element,
+  ({ children }: MemoInputProps) => children as React.JSX.Element,
   (prev, next) =>
     prev.value === next.value &&
     prev.update === next.update &&
@@ -88,7 +88,7 @@ function genEmptyMeta(): Meta {
   };
 }
 
-function InternalFormItem<Values = any>(props: FormItemProps<Values>): React.ReactElement {
+function InternalFormItem<Values = any>(props: FormItemProps<Values>): React.ReactElement<any> {
   const {
     name,
     noStyle,
@@ -120,7 +120,7 @@ function InternalFormItem<Values = any>(props: FormItemProps<Values>): React.Rea
   // ========================= MISC =========================
   // Get `noStyle` required info
   const listContext = React.useContext(ListContext);
-  const fieldKeyPathRef = React.useRef<InternalNamePath>();
+  const fieldKeyPathRef = React.useRef<InternalNamePath>(undefined);
 
   // ======================== Errors ========================
   // >>>>> Collect sub field errors
@@ -224,7 +224,7 @@ function InternalFormItem<Values = any>(props: FormItemProps<Values>): React.Rea
   }
 
   if (!hasName && !isRenderProps && !dependencies) {
-    return renderLayout(children) as JSX.Element;
+    return renderLayout(children) as React.JSX.Element;
   }
 
   let variables: Record<string, string> = {};
@@ -304,13 +304,14 @@ function InternalFormItem<Values = any>(props: FormItemProps<Values>): React.Rea
             'Must set `name` or use a render function when `dependencies` is set.',
           );
         } else if (isValidElement(children)) {
+          const childrenWithProps = children as React.ReactElement<any>;
           warning(
-            children.props.defaultValue === undefined,
+            childrenWithProps.props.defaultValue === undefined,
             'Form.Item',
             '`defaultValue` will not work on controlled Field. You should use `initialValues` of Form instead.',
           );
 
-          const childProps = { ...children.props, ...mergedControl };
+          const childProps = { ...childrenWithProps.props, ...mergedControl };
           if (!childProps.id) {
             childProps.id = fieldId;
           }
@@ -347,7 +348,7 @@ function InternalFormItem<Values = any>(props: FormItemProps<Values>): React.Rea
           triggers.forEach((eventName) => {
             childProps[eventName] = (...args: any[]) => {
               mergedControl[eventName]?.(...args);
-              children.props[eventName]?.(...args);
+              childrenWithProps.props[eventName]?.(...args);
             };
           });
 

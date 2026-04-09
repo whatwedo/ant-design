@@ -85,7 +85,7 @@ const Search = React.forwardRef<InputRef, SearchProps>((props, ref) => {
   const btnClassName = `${prefixCls}-button`;
 
   let button: React.ReactNode;
-  const enterButtonAsElement = (enterButton || {}) as React.ReactElement;
+  const enterButtonAsElement = (enterButton || {}) as React.ReactElement<any>;
   const isAntdButton =
     enterButtonAsElement.type && (enterButtonAsElement.type as typeof Button).__ANT_BUTTON === true;
   if (isAntdButton || enterButtonAsElement.type === 'button') {

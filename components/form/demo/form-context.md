@@ -39,7 +39,7 @@ interface ModalFormProps {
 
 // reset form fields when modal is form, closed
 const useResetFormOnCloseModal = ({ form, open }: { form: FormInstance; open: boolean }) => {
-  const prevOpenRef = useRef<boolean>();
+  const prevOpenRef = useRef<boolean>(undefined);
   useEffect(() => {
     prevOpenRef.current = open;
   }, [open]);

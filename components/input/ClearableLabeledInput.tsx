@@ -23,7 +23,7 @@ interface BasicProps {
   inputType: typeof ClearableInputType[number];
   value?: any;
   allowClear?: boolean;
-  element: React.ReactElement;
+  element: React.ReactElement<any>;
   handleReset: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
   className?: string;
   style?: React.CSSProperties;
@@ -71,7 +71,7 @@ class ClearableLabeledInput extends React.Component<ClearableInputProps> {
 
   renderTextAreaWithClearIcon(
     prefixCls: string,
-    element: React.ReactElement,
+    element: React.ReactElement<any>,
     statusContext: FormItemStatusContextProps,
   ) {
     const {

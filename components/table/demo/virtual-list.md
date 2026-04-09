@@ -37,7 +37,7 @@ const VirtualTable = <RecordType extends object>(props: TableProps<RecordType>) 
     };
   });
 
-  const gridRef = useRef<any>();
+  const gridRef = useRef<any>(undefined);
   const [connectObject] = useState<any>(() => {
     const obj = {};
     Object.defineProperty(obj, 'scrollLeft', {

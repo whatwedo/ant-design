@@ -346,7 +346,7 @@ export interface NotificationApi extends NotificationInstance {
   destroy(): void;
 
   // Hooks
-  useNotification: () => [NotificationInstance, React.ReactElement];
+  useNotification: () => [NotificationInstance, React.ReactElement<any>];
 }
 
 /** @internal test Only function. Not work on production */

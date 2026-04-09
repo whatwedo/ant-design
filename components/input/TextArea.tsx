@@ -100,7 +100,7 @@ const TextArea = React.forwardRef<TextAreaRef, TextAreaProps>(
 
     const [compositing, setCompositing] = React.useState(false);
     const [focused, setFocused] = React.useState(false);
-    const oldCompositionValueRef = React.useRef<string>();
+    const oldCompositionValueRef = React.useRef<string>(undefined);
     const oldSelectionStartRef = React.useRef<number>(0);
 
     const [value, setValue] = useMergedState(props.defaultValue, {

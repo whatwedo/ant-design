@@ -254,7 +254,7 @@ describe('Anchor Render', () => {
       </Anchor>,
       // https://github.com/testing-library/react-testing-library/releases/tag/v13.0.0
       // @ts-ignore
-      { legacyRoot: true },
+      {  },
     );
 
     expect(onChange).toHaveBeenCalledTimes(1);
@@ -378,7 +378,7 @@ describe('Anchor Render', () => {
         </Anchor>,
         // https://github.com/testing-library/react-testing-library/releases/tag/v13.0.0
         // @ts-ignore
-        { legacyRoot: true },
+        {  },
       );
 
       // Should be 2 times:

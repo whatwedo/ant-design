@@ -101,7 +101,7 @@ const Sider = React.forwardRef<HTMLDivElement, SiderProps>(
     };
 
     // ========================= Responsive =========================
-    const responsiveHandlerRef = useRef<(mql: MediaQueryListEvent | MediaQueryList) => void>();
+    const responsiveHandlerRef = useRef<(mql: MediaQueryListEvent | MediaQueryList) => void>(undefined);
     responsiveHandlerRef.current = (mql: MediaQueryListEvent | MediaQueryList) => {
       setBelow(mql.matches);
       onBreakpoint?.(mql.matches);

@@ -226,7 +226,7 @@ const Select = React.forwardRef(InternalSelect) as unknown as (<
   props: React.PropsWithChildren<SelectProps<ValueType, OptionType>> & {
     ref?: React.Ref<BaseSelectRef>;
   },
-) => React.ReactElement) & {
+) => React.ReactElement<any>) & {
   SECRET_COMBOBOX_MODE_DO_NOT_USE: string;
   Option: typeof Option;
   OptGroup: typeof OptGroup;

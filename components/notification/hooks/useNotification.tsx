@@ -16,7 +16,7 @@ export default function createUseNotification(
   ) => void,
   getRCNoticeProps: (args: ArgsProps, prefixCls: string) => RCNoticeContent,
 ) {
-  const useNotification = (): readonly [NotificationInstance, React.ReactElement] => {
+  const useNotification = (): readonly [NotificationInstance, React.ReactElement<any>] => {
     // We can only get content by render
     let getPrefixCls: ConfigConsumerProps['getPrefixCls'];
 

@@ -134,15 +134,15 @@ const InternalUploadList: React.ForwardRefRenderFunction<unknown, UploadListProp
       disabled,
       onClick: (e: React.MouseEvent<HTMLElement>) => {
         callback();
-        if (isValidElement(customIcon) && customIcon.props.onClick) {
-          customIcon.props.onClick(e);
+        if (isValidElement(customIcon) && (customIcon as React.ReactElement<any>).props.onClick) {
+          (customIcon as React.ReactElement<any>).props.onClick(e);
         }
       },
       className: `${prefixCls}-list-item-card-actions-btn`,
     };
     if (isValidElement(customIcon)) {
       const btnIcon = cloneElement(customIcon, {
-        ...customIcon.props,
+        ...(customIcon as React.ReactElement<any>).props,
         onClick: () => {},
       });
 

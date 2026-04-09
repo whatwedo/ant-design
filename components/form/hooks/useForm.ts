@@ -12,7 +12,7 @@ export interface FormInstance<Values = any> extends RcFormInstance<Values> {
     /** No! Do not use this in your code! */
     name?: string;
     /** No! Do not use this in your code! */
-    itemRef: (name: InternalNamePath) => (node: React.ReactElement) => void;
+    itemRef: (name: InternalNamePath) => (node: React.ReactElement<any>) => void;
   };
   getFieldInstance: (name: NamePath) => any;
 }
@@ -24,14 +24,14 @@ function toNamePathStr(name: NamePath) {
 
 export default function useForm<Values = any>(form?: FormInstance<Values>): [FormInstance<Values>] {
   const [rcForm] = useRcForm();
-  const itemsRef = React.useRef<Record<string, React.ReactElement>>({});
+  const itemsRef = React.useRef<Record<string, React.ReactElement<any>>>({});
 
   const wrapForm: FormInstance<Values> = React.useMemo(
     () =>
       form ?? {
         ...rcForm,
         __INTERNAL__: {
-          itemRef: (name: InternalNamePath) => (node: React.ReactElement) => {
+          itemRef: (name: InternalNamePath) => (node: React.ReactElement<any>) => {
             const namePathStr = toNamePathStr(name);
             if (node) {
               itemsRef.current[namePathStr] = node;

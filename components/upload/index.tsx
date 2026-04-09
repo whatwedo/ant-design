@@ -9,7 +9,7 @@ type InternalUploadType = typeof InternalUpload;
 type CompoundedComponent<T = any> = InternalUploadType & {
   <U extends T>(
     props: React.PropsWithChildren<UploadProps<U>> & React.RefAttributes<any>,
-  ): React.ReactElement;
+  ): React.ReactElement<any>;
   Dragger: typeof Dragger;
   LIST_IGNORE: string;
 };

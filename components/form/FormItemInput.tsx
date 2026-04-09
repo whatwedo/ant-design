@@ -19,9 +19,9 @@ interface FormItemInputMiscProps {
     render: (
       props: FormItemInputProps & FormItemInputMiscProps,
       domList: {
-        input: JSX.Element;
-        errorList: JSX.Element | null;
-        extra: JSX.Element | null;
+        input: React.JSX.Element;
+        errorList: React.JSX.Element | null;
+        extra: React.JSX.Element | null;
       },
     ) => React.ReactNode;
   };

@@ -1,4 +1,4 @@
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
 import message, { getInstance } from '..';
 import { waitFakeTimer } from '../../../tests/utils';
 import ConfigProvider from '../../config-provider';

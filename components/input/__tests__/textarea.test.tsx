@@ -436,7 +436,7 @@ describe('TextArea allowClear', () => {
     const ref = React.createRef<TextAreaRef>();
     const { container, unmount } = render(<Input.TextArea ref={ref} autoSize />, {
       container: document.body,
-      legacyRoot: true,
+      ,
     } as RenderOptions);
     fireEvent.focus(container.querySelector('textarea')!);
     container.querySelector('textarea')?.focus();

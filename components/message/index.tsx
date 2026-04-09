@@ -269,7 +269,7 @@ export interface MessageApi extends MessageInstance {
   warn(content: JointContent, duration?: ConfigDuration, onClose?: ConfigOnClose): MessageType;
   config(options: ConfigOptions): void;
   destroy(messageKey?: React.Key): void;
-  useMessage(): [MessageInstance, React.ReactElement];
+  useMessage(): [MessageInstance, React.ReactElement<any>];
 }
 
 /** @internal test Only function. Not work on production */

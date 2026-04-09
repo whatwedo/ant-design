@@ -15,7 +15,7 @@ const InternalRadio: React.ForwardRefRenderFunction<HTMLElement, RadioProps> = (
   const radioOptionTypeContext = React.useContext(RadioOptionTypeContext);
 
   const { getPrefixCls, direction } = React.useContext(ConfigContext);
-  const innerRef = React.useRef<HTMLElement>();
+  const innerRef = React.useRef<HTMLElement>(undefined);
   const mergedRef = composeRef(ref, innerRef);
   const { isFormItemInput } = useContext(FormItemInputContext);
 

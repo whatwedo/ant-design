@@ -305,7 +305,7 @@ const Cascader = React.forwardRef((props: CascaderProps, ref: React.Ref<Cascader
   );
 }) as unknown as (<OptionType extends BaseOptionType | DefaultOptionType = DefaultOptionType>(
   props: React.PropsWithChildren<CascaderProps<OptionType>> & { ref?: React.Ref<CascaderRef> },
-) => React.ReactElement) & {
+) => React.ReactElement<any>) & {
   displayName: string;
   SHOW_PARENT: typeof SHOW_PARENT;
   SHOW_CHILD: typeof SHOW_CHILD;

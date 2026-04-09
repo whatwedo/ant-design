@@ -76,7 +76,7 @@ const InternalMentions: React.ForwardRefRenderFunction<MentionsRef, MentionProps
   ref,
 ) => {
   const [focused, setFocused] = React.useState(false);
-  const innerRef = React.useRef<MentionsRef>();
+  const innerRef = React.useRef<MentionsRef>(undefined);
   const mergedRef = composeRef(ref, innerRef);
 
   // =================== Warning =====================

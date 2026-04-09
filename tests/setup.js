@@ -52,4 +52,10 @@ if (typeof window !== 'undefined') {
   // ref: https://github.com/jsdom/jsdom/issues/2524
   Object.defineProperty(window, 'TextEncoder', { writable: true, value: util.TextEncoder });
   Object.defineProperty(window, 'TextDecoder', { writable: true, value: util.TextDecoder });
+
+  // React 19 scheduler needs MessageChannel in jsdom
+  if (typeof global.MessageChannel === 'undefined') {
+    const { MessageChannel } = require('worker_threads');
+    global.MessageChannel = MessageChannel;
+  }
 }

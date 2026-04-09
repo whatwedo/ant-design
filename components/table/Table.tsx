@@ -108,7 +108,7 @@ export interface TableProps<RecordType>
 
 function InternalTable<RecordType extends object = any>(
   props: TableProps<RecordType>,
-  ref: React.MutableRefObject<HTMLDivElement>,
+  ref: React.Ref<HTMLDivElement>,
 ) {
   const {
     prefixCls: customizePrefixCls,
@@ -211,7 +211,7 @@ function InternalTable<RecordType extends object = any>(
   }, [rawData]);
 
   const internalRefs = {
-    body: React.useRef<HTMLDivElement>(),
+    body: React.useRef<HTMLDivElement>(undefined),
   };
 
   // ============================ RowKey ============================
@@ -552,7 +552,7 @@ function InternalTable<RecordType extends object = any>(
 
 const ForwardTable = React.forwardRef(InternalTable) as <RecordType extends object = any>(
   props: React.PropsWithChildren<TableProps<RecordType>> & { ref?: React.Ref<HTMLDivElement> },
-) => React.ReactElement;
+) => React.ReactElement<any>;
 
 type InternalTableType = typeof ForwardTable;
 

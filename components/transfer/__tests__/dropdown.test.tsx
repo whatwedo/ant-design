@@ -1,6 +1,6 @@
 /* eslint no-use-before-define: "off" */
 import React from 'react';
-import { act } from 'react-dom/test-utils';
+import { act } from 'react';
 import Transfer from '..';
 import { fireEvent, render } from '../../../tests/utils';
 

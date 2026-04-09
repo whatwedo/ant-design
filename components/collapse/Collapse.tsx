@@ -110,7 +110,7 @@ const Collapse: CompoundedComponent = (props) => {
 
   const getItems = () => {
     const { children } = props;
-    return toArray(children).map((child: React.ReactElement, index: number) => {
+    return toArray(children).map((child: React.ReactElement<any>, index: number) => {
       if (child.props?.disabled) {
         const key = child.key || String(index);
         const { disabled, collapsible } = child.props;

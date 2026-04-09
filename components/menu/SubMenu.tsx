@@ -51,7 +51,7 @@ function SubMenu(props: SubMenuProps) {
       <>
         {cloneElement(icon, {
           className: classNames(
-            isValidElement(icon) ? icon.props?.className : '',
+            isValidElement(icon) ? (icon as React.ReactElement<any>).props?.className : '',
             `${prefixCls}-item-icon`,
           ),
         })}

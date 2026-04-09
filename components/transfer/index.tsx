@@ -23,11 +23,11 @@ export { TransferSearchProps } from './search';
 export type TransferDirection = 'left' | 'right';
 
 export interface RenderResultObject {
-  label: React.ReactElement;
+  label: React.ReactElement<any>;
   value: string;
 }
 
-export type RenderResult = React.ReactElement | RenderResultObject | string | null;
+export type RenderResult = React.ReactElement<any> | RenderResultObject | string | null;
 
 export interface TransferItem {
   key?: string;

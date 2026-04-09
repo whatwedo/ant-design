@@ -191,7 +191,7 @@ const Base = React.forwardRef<HTMLElement, BlockProps>((props, ref) => {
   // ========================== Copyable ==========================
   const [enableCopy, copyConfig] = useMergedConfig<CopyConfig>(copyable);
   const [copied, setCopied] = React.useState(false);
-  const copyIdRef = React.useRef<number>();
+  const copyIdRef = React.useRef<number>(undefined);
 
   const copyOptions: Pick<CopyConfig, 'format'> = {};
   if (copyConfig.format) {
@@ -492,7 +492,7 @@ const Base = React.forwardRef<HTMLElement, BlockProps>((props, ref) => {
 
   return (
     <ResizeObserver onResize={onResize} disabled={!mergedEnableEllipsis || cssEllipsis}>
-      {(resizeRef: React.RefObject<HTMLElement>) => (
+      {(resizeRef: React.RefObject<HTMLElement | null>) => (
         <EllipsisTooltip
           tooltipProps={tooltipProps}
           enabledEllipsis={mergedEnableEllipsis}
